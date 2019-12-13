@@ -1,0 +1,32 @@
+import { action } from '@storybook/addon-actions';
+import { Button } from '@storybook/angular/demo';
+import { Story, Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title='MDX|Button' component={Button} />
+
+
+# Hello Docs
+
+Welcome to the future of Storybook!
+
+<Story name="hello" parameters={{ docs: { disable: true } }} >
+  {{
+    template:
+      '<Button>Hello button!</Button>',
+  }}
+</Story>
+
+```js
+<Button>Hello button!</Button>
+```
+
+<Story name="with emoji" parameters={{ docs: { disable: true } }}>
+  {{
+    template:
+      '<Button>Hello button2!</Button>',
+  }}
+</Story>
+
+```js
+<Button>Hello button2!</Button>
+```
