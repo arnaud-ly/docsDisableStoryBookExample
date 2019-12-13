@@ -9,24 +9,24 @@ import { Story, Meta } from '@storybook/addon-docs/blocks';
 
 Welcome to the future of Storybook!
 
-<Story name="hello" parameters={{ docs: { disable: true } }} >
+<Story name="docs disable" parameters={{ docs: { disable: true } }} >
   {{
     template:
-      '<Button>Hello button!</Button>',
+      '<Button>Should not be visible in the docs page</Button>',
   }}
 </Story>
 
 ```js
-<Button>Hello button!</Button>
+<Button>Should not be visible in the docs page</Button>
 ```
 
-<Story name="with emoji" parameters={{ docs: { disable: true } }}>
+<Story name="docs enable">
   {{
     template:
-      '<Button>Hello button2!</Button>',
+      '<Button>Should be visible in the docs page</Button>',
   }}
 </Story>
 
 ```js
-<Button>Hello button2!</Button>
+<Button>Should be visible in the docs page</Button>
 ```
